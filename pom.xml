@@ -2,6 +2,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<groupId>net.gtaun.wl</groupId>
+	<artifactId>wl-common</artifactId>
+	<version>1.1-SNAPSHOT</version>
+
+	<name>wl-common</name>
+	<description>WL Common Library</description>
+	<url>https://github.com/GTAUN/wl-common</url>
+
 	<repositories>
 		<repository>
 			<id>gtaun-public-repo</id>
@@ -10,13 +18,18 @@
 		</repository>
 	</repositories>
 
-	<groupId>net.gtaun.wl</groupId>
-	<artifactId>wl-common</artifactId>
-	<version>1.1-SNAPSHOT</version>
-
-	<name>wl-common</name>
-	<description>WL Common Library</description>
-	<url>https://github.com/GTAUN/wl-common</url>
+	<distributionManagement>
+		<repository>
+			<id>deployment</id>
+			<name>Releases</name>
+			<url>http://repo.gtaun.net/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>deployment</id>
+			<name>Snapshots</name>
+			<url>http://repo.gtaun.net/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<licenses>
 		<license>
