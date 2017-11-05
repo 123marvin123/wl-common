@@ -18,8 +18,8 @@
 
 package net.gtaun.wl.common.textdraw;
 
-import net.gtaun.shoebill.object.Player;
-import net.gtaun.shoebill.object.PlayerTextdraw;
+import net.gtaun.shoebill.entities.Player;
+import net.gtaun.shoebill.entities.PlayerTextdraw;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -27,8 +27,7 @@ public final class TextDrawUtils
 {
 	public static PlayerTextdraw createPlayerText(Player player, float x, float y, String text)
 	{
-		PlayerTextdraw textdraw = PlayerTextdraw.create(player, x, (y-50)/1.075f+50, text);
-		return textdraw;
+		return PlayerTextdraw.create(player, x, (y-50)/1.075f+50, text);
 	}
 	
 	public static PlayerTextdraw createPlayerTextBG(Player player, float x, float y, float w, float h)
